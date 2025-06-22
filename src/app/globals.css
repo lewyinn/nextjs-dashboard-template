@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Izinkan horizontal scroll untuk tabel mobile */
+.mobile-table-container {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mobile-table-container table {
+    min-width: 800px;
+}
